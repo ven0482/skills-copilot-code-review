@@ -249,8 +249,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Handle login form submission
   loginForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const username = document.getElementById("login-username").value;
+    const password = document.getElementById("login-password").value;
     await login(username, password);
   });
 
@@ -824,7 +824,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("signup-email").value;
     const activity = activityInput.value;
 
     try {

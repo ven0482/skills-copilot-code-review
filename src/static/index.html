@@ -105,11 +105,11 @@
         <h3>Register for <span id="modal-activity-name"></span></h3>
         <form id="signup-form">
           <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <label for="signup-email">Student Email:</label>
+            <input type="email" id="signup-email" required placeholder="your-email@mergington.edu" />
           </div>
           <input type="hidden" id="activity" value="" />
-          <button type="submit">Register</button>
+          <button type="submit" class="register-button">Register</button>
         </form>
       </div>
     </div>
@@ -121,17 +121,21 @@
         <h3>Teacher Login</h3>
         <form id="login-form">
           <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" required placeholder="Enter your username" />
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" required placeholder="Enter your username" />
           </div>
           <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" required placeholder="Enter your password" />
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required placeholder="Enter your password" />
           </div>
           <button type="submit">Login</button>
         </form>
         <div id="login-message" class="hidden message"></div>
       </div>
+    </div>
+
+    <div class="announcement-banner">
+      📢 Activity registration is open until the end of the month. Don't lose your spot!
     </div>
 
     <script src="app.js"></script>
